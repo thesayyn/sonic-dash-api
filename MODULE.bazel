@@ -1,4 +1,8 @@
-module(name = "sonic-dash-api")
+# Keep bazel_compatibility in sync with sonic-buildimage's .bazelversion.
+module(
+    name = "sonic-dash-api",
+    bazel_compatibility = [">=8.5.1", "<=8.5.1"],
+)
 
 bazel_dep(name = "protobuf", version = "33.4")
 bazel_dep(name = "googletest", version = "1.17.0")
