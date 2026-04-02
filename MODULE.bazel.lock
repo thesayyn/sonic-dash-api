@@ -222,7 +222,7 @@
     "@@rules_distroless+//apt:extensions.bzl%apt": {
       "general": {
         "bzlTransitiveDigest": "c9bF647fGaf7+f77BtPvM3sRD9KziirQKgYXFZx2NPI=",
-        "usagesDigest": "w+48q6mqATgGKh37t7VBhxh5JRehWo63g4F92YGtzIM=",
+        "usagesDigest": "gsc3BPZC7/NVe6zn8IHos9PomcADH2dDB4gLWB/b3vE=",
         "recordedFileInputs": {},
         "recordedDirentsInputs": {},
         "envVariables": {},

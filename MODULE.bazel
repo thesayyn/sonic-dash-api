@@ -1,6 +1,7 @@
 # Keep bazel_compatibility in sync with sonic-buildimage's .bazelversion.
 module(
     name = "sonic-dash-api",
+    version = "0.0.0",
     bazel_compatibility = [">=8.5.1", "<=8.5.1"],
 )
 
@@ -10,10 +11,6 @@ bazel_dep(name = "bazel_lib", version = "3.1.1")
 bazel_dep(name = "tar.bzl", version = "0.8.1")
 
 bazel_dep(name = "sonic-build-infra", version = "0.0.0")
-local_path_override(
-    module_name = "sonic-build-infra",
-    path = "../sonic-build-infra",
-)
 
 register_toolchains("@sonic-build-infra//toolchains/gcc:host_gcc_toolchain")
 
