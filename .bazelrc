@@ -1,2 +1,6 @@
+# TODO(bazel-ready): This assumes this repo is a submodule of sonic-buildimage.
+common --registry=file://%workspace%/../../tools/bazel/registry
+common --registry=https://bcr.bazel.build
+
 build --incompatible_enable_proto_toolchain_resolution
 build --@protobuf//bazel/toolchains:prefer_prebuilt_protoc
